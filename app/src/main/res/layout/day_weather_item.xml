@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/dayly_layout"
+    android:layout_width="match_parent"
+    android:layout_height="84dp"
+    android:orientation="horizontal"
+    android:padding="12dp"
+    android:background="#ffffff">
+
+    <!--<RelativeLayout-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:paddingRight="12dp">-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="vertical">-->
+
+            <!--<ImageView-->
+                <!--android:layout_width="28dp"-->
+                <!--android:layout_height="28dp" />-->
+
+            <!--<ImageView-->
+                <!--android:layout_width="28dp"-->
+                <!--android:layout_height="28dp"-->
+                <!--android:layout_marginTop="4dp" />-->
+        <!--</LinearLayout>-->
+
+        <!--<ImageView-->
+            <!--android:layout_width="28dp"-->
+            <!--android:layout_height="28dp"-->
+            <!--android:layout_marginTop="16dp"-->
+            <!--android:visibility="gone" />-->
+    <!--</RelativeLayout>-->
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="5"
+        android:orientation="vertical"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/dayly_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="星期天"
+            android:textSize="24sp"
+            android:gravity="bottom"
+            />
+        <TextView
+            android:id="@+id/dayly_weather"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="晴/多云"
+            android:textSize="18sp"
+            android:gravity="top"
+            />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/dayly_temp"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:text="19°/18°"
+        android:gravity="center"
+        android:textSize="24sp"
+        />
+</LinearLayout>
